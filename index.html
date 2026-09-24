@@ -13,6 +13,8 @@ button,input,textarea{font:inherit}button{cursor:pointer}
 #app{display:none;height:100%;flex-direction:column}
 header{display:flex;gap:6px;align-items:center;padding:8px 10px;padding-top:calc(8px + env(safe-area-inset-top,0px));background:#14202b;color:#fff}
 header b{flex:1;font-size:18px}
+ header{flex-wrap:wrap;justify-content:space-between}
+@media(max-width:480px){header b{display:none}header .b{padding:6px 9px;font-size:12px}}
 .b{background:#14202b;color:#fff;border:0;border-radius:9px;padding:9px 13px;font-weight:600}
 .b.g{background:none;color:#14202b;border:1px solid #c5d0d7}
 header .b{background:#2a3b4a;padding:6px 10px;font-size:13px}
